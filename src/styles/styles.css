@@ -1,0 +1,238 @@
+.dark-mode body {
+  background: #2a2a2a;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Header Buttons */
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Extras Button */
+.extras-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.extras-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .extras-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Search Container */
+.search-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.search-input {
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #ffffff; /* Light background for input */
+  color: #333333; /* Dark text for input */
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Dark Mode Search Input */
+.dark-mode .search-input {
+  background-color: #333333; /* Dark background for input */
+  color: #f5f5f5; /* Light text for input */
+  border-color: #555555; /* Darker border for input */
+}
+
+.dark-mode .search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Parable List Container */
+.parable-list {
+  padding: 20px;
+  background-color: #ffffff; /* Light background */
+  color: #333333; /* Dark text */
+  transition: all 0.5s;
+}
+
+/* Dark Mode Parable List */
+.dark-mode .parable-list {
+  background-color: #1a1a1a; /* Dark background */
+  color: #f5f5f5; /* Light text */
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Parable Card */
+.parable-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  background-color: #ffffff; /* Light background for cards */
+}
+
+.parable-card:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode Parable Card */
+.dark-mode .parable-card {
+  border-color: #444444; /* Darker border for cards */
+  background-color: #2a2a2a; /* Dark background for cards */
+}
+
+/* Remove underline from parable titles */
+.parable-card a {
+  text-decoration: none;
+  color: inherit; /* Ensures the link color matches the surrounding text */
+}
+
+/* Card Image */
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333333; /* Dark text for card titles */
+}
+
+/* Dark Mode Card Content */
+.dark-mode .card-content h2 {
+  color: #f5f5f5; /* Light text for card titles */
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.back-to-top:hover {
+  background: rgba(0, 123, 255, 1); /* Solid blue on hover */
+  opacity: 1;
+}
+
+.back-to-top-icon {
+  color: white;
+  font-size: 20px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Media Queries for Responsive Grid */
+@media (max-width: 480px) {
+  .header h1 {
+    line-height: 1.0;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Force 2 columns on small screens */
+  }
+  .card-content h2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+  }
+  .card-content h2 {
+    font-size: 1.0rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr); /* 5 columns on desktops */
+  }
+}
