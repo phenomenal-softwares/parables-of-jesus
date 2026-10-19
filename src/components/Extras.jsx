@@ -26,7 +26,11 @@ const Extras = () => {
       <section className="section">
         <h2>About the App</h2>
         <p>
-        The Parables of Jesus mobile app is a complimentary resource designed to facilitate a deeper understanding of Jesus' parables and the Bible as a whole. By providing insightful images and detailed interpretations for each parable, this app aims to make biblical study more engaging and accessible for everyone.
+          The Parables of Jesus mobile app is a complimentary resource designed
+          to facilitate a deeper understanding of Jesus' parables and the Bible
+          as a whole. By providing insightful images and detailed
+          interpretations for each parable, this app aims to make biblical study
+          more engaging and accessible for everyone.
         </p>
       </section>
 
@@ -35,8 +39,8 @@ const Extras = () => {
         <h2>Contact Us</h2>
         <p>
           Have feedback or suggestions? Reach out at{" "}
-          <a href="mailto:abiodunojo453@gmail.com" className="link">
-            support@parablesofjesus.com
+          <a href="info@phenomenalproductions.com.ng" className="link">
+            info@phenomenalproductions.com.ng
           </a>
           .
         </p>
@@ -52,26 +56,40 @@ const Extras = () => {
 
       {/* Privacy Policy Accordion */}
       <section className="section">
-        <h2 onClick={() => toggleAccordion("privacy")} className="accordion-header">
+        <h2
+          onClick={() => toggleAccordion("privacy")}
+          className="accordion-header"
+        >
           Privacy Policy {openAccordion === "privacy" ? "−" : "+"}
         </h2>
         {openAccordion === "privacy" && (
           <p>
-            Your use of the app is completely confidential. We do not collect or transmit any data related to your usage, ensuring your privacy is fully respected.
+            Your use of the app is completely confidential. We do not collect or
+            transmit any data related to your usage, ensuring your privacy is
+            fully respected.
           </p>
         )}
       </section>
 
       {/* Terms of Use Accordion */}
       <section className="section">
-        <h2 onClick={() => toggleAccordion("terms")} className="accordion-header">
+        <h2
+          onClick={() => toggleAccordion("terms")}
+          className="accordion-header"
+        >
           Terms of Use {openAccordion === "terms" ? "−" : "+"}
         </h2>
         {openAccordion === "terms" && (
           <p>
-            This application is exclusively intended for non-commercial purposes and is designed to facilitate scripture-based studies and devotionals. It may be freely used in personal and group settings, as well as in non-commercial corporate environments, provided that such use aligns with the principles of the Christian faith. 
+            This application is exclusively intended for non-commercial purposes
+            and is designed to facilitate scripture-based studies and
+            devotionals. It may be freely used in personal and group settings,
+            as well as in non-commercial corporate environments, provided that
+            such use aligns with the principles of the Christian faith.
             <br /> <br />
-            By utilizing this application, you acknowledge that you have read, understood, and agreed to these terms. If you do not accept these terms, please discontinue use of the application.
+            By utilizing this application, you acknowledge that you have read,
+            understood, and agreed to these terms. If you do not accept these
+            terms, please discontinue use of the application.
           </p>
         )}
       </section>
@@ -84,19 +102,35 @@ const Extras = () => {
 
       {/* Credits Accordion */}
       <section className="section">
-        <h2 onClick={() => toggleAccordion("credits")} className="accordion-header">
+        <h2
+          onClick={() => toggleAccordion("credits")}
+          className="accordion-header"
+        >
           Credits {openAccordion === "credits" ? "−" : "+"}
         </h2>
         {openAccordion === "credits" && (
           <p>
             The images and illustrations used in this app are courtesy of{" "}
-            <a href="https://www.freebibleimages.org" target="_blank" rel="noopener noreferrer" className="link">
+            <a
+              href="https://www.freebibleimages.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
               Free Bible Images
-            </a>{" "} and their contributors.
-            All images remain the property of their respective owners and are used under the terms of the Free Bible Images Terms of Download. We do not claim any ownership or rights to these images.
+            </a>{" "}
+            and their contributors. All images remain the property of their
+            respective owners and are used under the terms of the Free Bible
+            Images Terms of Download. We do not claim any ownership or rights to
+            these images.
             <br /> <br />
-            For access to these images or similar ones, please visit the {" "}
-            <a href="https://www.freebibleimages.org" target="_blank" rel="noopener noreferrer" className="link">
+            For access to these images or similar ones, please visit the{" "}
+            <a
+              href="https://www.freebibleimages.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
               Free Bible Images website
             </a>
             .
@@ -105,7 +139,18 @@ const Extras = () => {
       </section>
       {/* Footer */}
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Phenomenal Productions. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()}{" "}
+          <a
+            href="https://phenomenalproductions.com.ng"
+            target="_blank"
+            rel="noreferrer"
+            className="link"
+          >
+            Phenomenal Productions.
+          </a>{" "}
+          All rights reserved.
+        </p>
       </footer>
     </div>
   );

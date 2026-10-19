@@ -1,71 +1,81 @@
-# Getting Started with Create React App
+# Parables of Jesus
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Parables of Jesus is a free, non-commercial Bible study experience that brings together Jesus' parables, their scripture references, illustrated story sequences, and written reflections on their meaning. The current release is a web application designed to make exploring these teachings straightforward on a browser.
 
-## Available Scripts
+**Author:** Abiodun Ojo  
+**Last updated:** October 19, 2026
 
-In the project directory, you can run:
+## What the project offers
 
-### `yarn start`
+- Browse a curated collection of parables and search by title.
+- Explore illustrated sequences for each parable.
+- Read the associated Bible passage, with King James Version (KJV) and World English Bible (WEB) translation options.
+- Read a reflection on the meaning of each parable.
+- Switch between light and dark themes.
+- Navigate the application through its list, detail, and extras pages.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bible passage text is requested from [Bible API](https://bible-api.com/) when a parable is opened. An internet connection and availability of that external service are required to load the text.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology
 
-### `yarn test`
+- **React 19** for the user interface.
+- **React Router 7** for client-side navigation.
+- **Create React App / `react-scripts` 5** for development, testing, and production builds.
+- **React Icons** for interface icons and **React Spinners** for loading feedback.
+- **Bible API** for retrieving scripture text.
+- **CSS** for application styling.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The parable references, reflections, and image paths are maintained in the project source; the image assets are served from the public directory.
 
-### `yarn build`
+## Native apps: planned direction
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The web version is a useful way to explore the project today, but it is not the final platform goal. The project is planned to be built and optimized as native applications for **Android and iOS**, with a mobile-first experience tailored to each platform. Native apps are not available yet; timing and feature details have not been finalized.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Potential native features may include:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Offline access to saved parables, reflections, and scripture passages.
+- Bookmarks, reading history, and personal notes.
+- Daily parable reminders and reading plans.
+- Native sharing, accessibility, and platform-specific navigation.
+- Optional audio readings and adjustable reading preferences.
 
-### `yarn eject`
+These are prospective ideas, not features currently included in the web application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Requirements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js and Yarn.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Install and run locally
 
-## Learn More
+```bash
+git clone https://github.com/phenomenal-softwares/parables-of-jesus.git
+cd parables-of-jesus
+yarn install
+yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The development server opens at [http://localhost:3000](http://localhost:3000).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Available commands
 
-### Code Splitting
+| Command | Description |
+| --- | --- |
+| `yarn start` | Start the local development server. |
+| `yarn test` | Run the test suite in watch mode. |
+| `yarn build` | Create an optimized production build in `build/`. |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Image credits and permissions
 
-### Analyzing the Bundle Size
+The illustrations used in this project are courtesy of [Free Bible Images](https://www.freebibleimages.org/) and its contributing artists and content providers. We are grateful to the image owners and contributors who made these resources available and gave permission for their use on non-commercial platforms.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+All image rights remain with their respective copyright owners. Parables of Jesus does not claim ownership of these images, and they must not be treated as freely reusable or used commercially on the basis of their inclusion here. Please consult [Free Bible Images](https://www.freebibleimages.org/) and its [reuse conditions](https://www.freebibleimages.org/help/reuse/) for the applicable usage conditions, contributor information, and access to the original resources.
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For feedback or suggestions, contact [info@phenomenalproductions.com.ng](mailto:info@phenomenalproductions.com.ng).
 
-### Advanced Configuration
+## License and use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# parables-of-jesus" 
+This project is intended for non-commercial Bible study and devotional use. The images and scripture text are subject to the rights and terms of their respective owners and providers; this statement does not grant permission to reuse those materials.
